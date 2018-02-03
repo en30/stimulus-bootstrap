@@ -1,0 +1,11 @@
+{
+  "name": "stimulus-bootstrap",
+  "version": "0.0.1",
+  "description": "Stimulus controllers for Bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "en30 <en30.git@gmail.com>",
+  "license": "MIT"
+}
