@@ -1,0 +1,7 @@
+parser: babel-eslint
+plugins:
+  - flowtype
+  - prettier
+extends:
+  - plugin:flowtype/recommended
+  - plugin:prettier/recommended

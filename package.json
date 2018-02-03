@@ -4,8 +4,37 @@
   "description": "Stimulus controllers for Bootstrap",
   "main": "index.js",
   "scripts": {
+    "doc": "node server.js",
+    "watch": "babel -w src --out-dir lib",
+    "prepare": "babel src --out-dir lib",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "en30 <en30.git@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "files": [
+    "lib"
+  ],
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.1",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.17.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-flowtype": "^2.42.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "express": "^4.16.2",
+    "popper.js": "^1.12.9",
+    "prettier": "^1.10.2",
+    "webpack": "^3.10.0",
+    "webpack-dev-middleware": "^2.0.4"
+  },
+  "dependencies": {
+    "highlight.js": "^9.12.0",
+    "stimulus": "^1.0.1"
+  },
+  "peerDependencies": {
+    "popper.js": "^1.12.9"
+  }
 }
