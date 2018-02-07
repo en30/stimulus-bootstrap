@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>stimulus-bootstrap</title>
@@ -10,17 +11,53 @@
     <div class="container my-4 py-4">
       <h1>stimulus-bootstrap</h1>
 
-      <h2>alert</h2>
-      <div data-controller="source-viewer">
-        <div data-target="source-viewer.source">
-          <div class="alert alert-warning alert-dismissible fade show" role="alert" data-controller="alert">
-            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-            <button type="button" class="close" aria-label="Close" data-action="alert#close">
-              <span aria-hidden="true">&times;</span>
-            </button>
+      <section>
+        <h2>alert</h2>
+        <div data-controller="source-viewer">
+          <div data-target="source-viewer.source">
+            <div class="alert alert-warning alert-dismissible fade show" role="alert" data-controller="alert">
+              <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+              <button type="button" class="close" aria-label="Close" data-action="alert#close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
+
+
+      <section>
+        <h2>button</h2>
+        <section>
+          <h3>Toggle state</h3>
+          <div data-controller="source-viewer">
+            <div data-target="source-viewer.source">
+              <button type="button" class="btn btn-primary" data-controller="button" data-action="button#toggle">
+                Click me
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h3>Checkbox and radio buttons</h3>
+          <div data-controller="source-viewer">
+            <div data-target="source-viewer.source">
+              <div class="btn-group btn-group-toggle" data-controller="button">
+                <label class="btn btn-secondary active" data-action="click->button#toggle">
+                  <input type="radio" name="options" id="option1" autocomplete="off" checked> Active
+                </label>
+                <label class="btn btn-secondary" data-action="click->button#toggle">
+                  <input type="radio" name="options" id="option2" autocomplete="off"> Radio
+                </label>
+                <label class="btn btn-secondary" data-action="click->button#toggle">
+                  <input type="radio" name="options" id="option3" autocomplete="off"> Radio
+                </label>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
     </div>
   </body>
 </html>
