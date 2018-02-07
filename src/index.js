@@ -1,7 +1,3 @@
-import { Application } from "stimulus"
-import { definitionsFromContext } from "stimulus/webpack-helpers"
+import AlertControlelr from "./controllers/alert_controller";
 
-const application = Application.start()
-const context = require.context("./src", true, /\.js$/)
-application.load(definitionsFromContext(context))
-
+export { AlertControlelr };
