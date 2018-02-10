@@ -4,7 +4,8 @@
   "description": "Stimulus controllers for Bootstrap",
   "main": "index.js",
   "scripts": {
-    "doc": "node server.js",
+    "dev": "node server.js",
+    "doc": "webpack",
     "watch": "babel -w src --out-dir lib",
     "prepare": "babel src --out-dir lib",
     "test": "echo \"Error: no test specified\" && exit 1"

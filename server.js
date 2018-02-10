@@ -5,7 +5,7 @@ const webpackMiddleware = require("webpack-dev-middleware")
 const webpackConfig = require("./webpack.config")
 
 const app = express()
-const publicPath = path.join(__dirname, "doc")
+const publicPath = path.join(__dirname, "docs")
 const port = process.env.PORT || 9000
 
 app.use(express.static(publicPath))
